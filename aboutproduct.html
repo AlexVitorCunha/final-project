@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sony TPS-L2 Walkman</title>
+    <meta name="description" content="Product page">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style-product.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/functions.js"></script>
+</head>
+
+<body>
+    <header id="navigation">
+    </header>
+    <main>
+        <section id="buy-section">
+            <div>
+               <div id="current-photo">
+                </div>
+                <ul>
+                    <li id="photo1" onclick="currentpic('photo-section1.jpeg')"><span></span></li>
+                    <li id="photo2" onclick="currentpic('Headphone2.jpg')"><span></span></li>
+                    <li id="photo3" onclick="currentpic('photo-section7.jpeg')"><span></span></li>
+                    <li id="photo4" onclick="currentpic('walkman3.png')"><span></span></li>
+                    <li id="photo5" onclick="currentpic('walkman-colors.jpg')"><span></span></li>
+                </ul> 
+            </div>
+            <div>
+                <form action="file.php">
+                    <h2>Sony TPS-L2 Walkman</h2>
+                    <div>
+                        <label for="color">Color: </label>
+                        <input required type="radio" name="size" id="regular" value="regular">
+                        <div>r</div>
+                        <input required type="radio" name="size" id="kids" value="kids">
+                        <div>k</div>
+                    </div>
+                    <div>
+                        <label for="voltage">Voltage:</label>
+                        <select name="voltage" id="voltage">
+                            <option value="110v" selected>110v</option>
+                            <option value="220v">220v</option>
+                        </select>
+                    </div>
+                    <div id="choose-quantity">
+                        <label>Quantity:</label>
+                        <input type="number" id="number" value="1" min="1" max="5">
+                    </div>
+                    <p id="price">CA$ <span>300</span> 270 Pre-order offer</p>
+                    <button id="pre-order">Pre-order</button>
+                </form>
+            </div>
+        </section>
+        <section id="video-section">
+            <h2>Feel like a Marvel super hero!</h2>
+            <div>
+                <video src="./img/guardians-of-the-galaxy.mp4" controls>
+                </video>
+            </div>
+        </section>
+        <section id="headphone-section">
+            <div>
+                <h3>HEADPHONE</h3>
+            </div>
+            <div>
+                <ul>
+                    <li>High Fidely Audio</li>
+                    <li>Padding for more comfort</li>
+                    <li>Adjustable for all head sizes</li>
+                </ul>
+            </div>
+        </section>
+        <section id="multiple-headphones">
+            <h3>Enjoy music with friends!</h3>
+            <p>2 headphone entrances so you can share your favorite tunes!</p>
+        </section>
+        <section id="kids-version">
+            <div>
+                <h3>LIMITED EDITION</h3>
+            </div>
+            <div>
+                <ul>
+                    <li>Special for Kids</li>
+                    <li>Smaller Headphone</li>
+                </ul>
+            </div>
+        </section>
+        <section id="mic-section">
+            <h3>Built in Mic</h3>
+        </section>
+    </main>
+    <footer id="footer">
+    </footer>
+    <script>
+        function currentpic(image){
+            var element = document.getElementById("current-photo");
+            var photo = "url('../img/" + image + "')";
+            element.style.background = photo;
+            element.style.backgroundSize = 'cover';
+            element.style.backgroundRepeat = 'no-repeat';
+            element.style.backgroundPositionX = 'center';
+            element.style.backgroundPositionY = 'center';
+        }
+    </script>
+</body>
+</html>

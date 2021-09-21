@@ -1,0 +1,84 @@
+main{
+    margin-top: 100px;
+}
+
+main > section:nth-child(1){
+    width: 75vw;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #014d87;
+    align-items: center;
+    color: white;
+    padding: 0px 15px 15px 15px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+form > h1{
+    margin-bottom: 0px;
+}
+
+form > p, form > p > a{
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+form > input, #dropdown{
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+#walkman-photo{
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    right: 10vw;
+}
+
+form > label{
+    font-size: 25px;
+}
+
+#submit{
+    background-color: #ed6a00;
+    margin-top: 15px;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+#submit:hover{
+    background-color: #f59445;
+}
+
+#FAQ{
+    text-align: center;
+    width: 75vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#FAQ > h2{
+    font-size: 35px;
+}
+
+#FAQ > div > h3{
+    background-image: linear-gradient(90deg, #cccccc 0%, #eaeaea 50%, #d4d4d4 100%);
+    font-size: 20px;
+}
+
+#FAQ > div > p{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px){
+    #walkman-photo{
+        right: 5vw;
+    }
+}

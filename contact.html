@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Product page">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style-contact.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script language="javascript" src="./js/functions.js"></script>
+</head>
+
+<body>
+    <header id="navigation">
+    </header>
+    <main>
+        <section>
+            <img src="./img/walkman-transparent.png" id="walkman-photo" alt="walkman">
+            <form action="file.php">
+                <h1>CONTACT FORM</h1>
+                <p>check out our <a href="#FAQ">FAQ</a></p>
+                <label>Name:</label>
+                <input type="text" id="name" name="name">
+                <label>Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label>Subject:</label>
+                <select id="dropdown">
+                    <option disabled selected value>Select a subject</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="warranty">Warranty</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label>Your message:</label>
+                <textarea name="comments" cols="30" rows="10" placeholder="Write your message here..." minlength="50" required></textarea>
+                <button id="submit">Send Message</button>
+            </form>
+        </section>
+        <section id="FAQ">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3>What are the advantages of pre-order?</h3>
+                <p>Everyone who pre-orders will receive the product days before it hit the stores, get 10% off on
+                    accessories and will get a free case.</p>
+            </div>
+            <div>
+                <h3>How many can I order?</h3>
+                <p>Since this is a highly anticipated product, we have established a limit of 5 per costumers.</p>
+            </div>
+            <div>
+                <h3>Does the kids version have anything different from the regular one?</h3>
+                <p>Other than the colors of the product, the kids version comes with a K7 tape of one classic fairytale
+                    and smaller headphones for better fit.</p>
+            </div>
+            <div>
+                <h3>How long is the warranty and what does it cover?</h3>
+                <p>There is an 1 year warranty that can be extended for up to 2 years with extra fee. It covers
+                    manufacting defects and it doesn't cover dropping or water damage.</p>
+            </div>
+            <div>
+                <h3>What is the delivery cost?</h3>
+                <p>If you order more than 2 products the delivery costs are on us! If you decide to order only one you
+                    are going to see an estimate once you check-out.</p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+    </footer>
+</body>
+
+</html>

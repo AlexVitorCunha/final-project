@@ -1,0 +1,321 @@
+/*product color palette */
+:root{
+    --main-orange:#ed6a00;
+    --main-blue: #014d87;
+    --light-blue: #3cafff;
+    --pink:#ff4d89;
+}
+
+header{
+    position: relative;
+}
+
+header > nav > ul > li:hover{
+    background-color: var(--main-orange);
+}
+
+#buy-section{
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#buy-section > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+}
+
+#buy-section > div:nth-child(1) > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: -50px;
+}
+
+#buy-section > div:nth-child(1) > ul > li{
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#photo1 {
+    background:url('../img/photo-section1.jpeg') no-repeat;
+    background-position: 50%  50%;
+    background-size: 100px;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+#photo2 {
+    background:url('../img/Headphone2.jpg') no-repeat;
+    background-position: 50%  50%;
+    background-size: 100px;
+    background-color: #ffffff;
+}
+
+#photo3 {
+    background:url('../img/photo-section7.jpeg') no-repeat;
+    background-position: 50%  50%;
+    background-size: 100px;
+    background-color: #ffffff;    
+}
+
+#photo4 {
+    background:url('../img/walkman3.png') no-repeat;
+    background-position: 50%  50%;
+    background-size: 100px;
+    background-color: #ffffff;    
+}
+
+#photo5 {
+    background:url('../img/walkman-colors.jpg') no-repeat;
+    background-position: 50%  50%;
+    background-size: 100px;
+    background-color: #ffffff;    
+}
+
+#current-photo{
+    width: 50vw;
+    height: 30vw;
+    background:url('../img/photo-section1.jpeg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#buy-section > div:nth-child(2){
+    margin-top: -20px;
+}
+
+#buy-section > div:nth-child(2) > form > h2{
+    border-bottom: 2px solid #757575;
+}
+
+#buy-section > div:nth-child(2) > form > div{
+    margin-bottom: 15px;
+}
+
+#buy-section > div:nth-child(2) > form > div:nth-child(2){
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#buy-section > div:nth-child(2) > form > div > div:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(45deg, var(--main-blue) 0%, var(--main-blue) 50%,var(--main-orange) 50%, var(--main-orange) 100%);
+}
+
+#buy-section > div:nth-child(2) > form > div > div:nth-child(5) {
+    width: 25px;
+    height: 25px;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(45deg, var(--light-blue) 0%, var(--light-blue) 50%, var(--pink) 50%, var(--pink) 100%);
+}
+
+#price > span{
+    text-decoration: line-through;
+}
+
+#pre-order{
+    background-color: var(--main-orange);
+    margin-top: 15px;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+#pre-order:hover{
+    background-color: #f59445;
+}
+
+#video-section{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-blue);
+    padding-bottom: 20px;
+}
+
+#video-section > h2{
+    color: white;
+    font-size: 35px;
+}
+
+#video-section > div > video{
+    width: 100%;
+}
+
+#headphone-section{
+    display: flex;
+    background-color: var(--main-orange);
+}
+
+#headphone-section > div:nth-child(1){
+    width: 65%;
+    height: 350px;
+    background: url('../img/Headphone.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#headphone-section > div:nth-child(1), #kids-version > div:nth-child(1){
+    display: flex;
+    text-align: center; 
+    align-items: center; 
+}
+
+#headphone-section > div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+
+#headphone-section > div > h3, #kids-version > div > h3{
+    font-size: 35px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#headphone-section > div > ul, #kids-version > div > ul{
+    list-style: none;
+}
+
+
+#headphone-section > div > ul > li, #kids-version > div > ul > li{
+ font-size: 25px; 
+ margin-bottom: 10px; 
+ color: white; 
+}
+
+#kids-version > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    text-align: end;
+    padding-right: 30px;
+}
+
+#multiple-headphones{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: url('../img/headphone-input.jpeg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#multiple-headphones > h3{
+    font-size: 30px;
+}
+
+#multiple-headphones > p{
+    font-size: 20px;
+    margin-top: 175px;
+}
+
+#mic-section{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: url('../img/mic.png');
+    background-position:left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mic-section > h3{
+    font-size: 35px;
+    margin-top: 65px;
+    margin-left: 10px;
+}
+
+#kids-version{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 350px;
+    background-color: var(--pink);
+}
+
+#kids-version > div:nth-child(1){
+    width: 65%;
+    height: 350px;
+    background: url('../img/walkman-colors.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 800px){
+    #buy-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #current-photo{
+        width: 80vw;
+        height: 50vw;
+    }
+
+    #buy-section > div:nth-child(1) > ul > li{
+        width: 60px;
+        height: 60px;
+    }
+
+    #video-section > h2{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #headphone-section, #kids-version{
+        flex-direction: column;
+    }
+
+    #headphone-section > div:nth-child(1), #kids-version > div:nth-child(1){
+        width: 100%;
+    }
+
+    #headphone-section > div:nth-child(2), #kids-version > div:nth-child(2){
+        text-align: center;
+    }
+
+    #headphone-section > div > ul, #kids-version > div > ul{
+        width: 100vw;
+    }
+
+    #headphone-section > div > ul{
+        padding-left: 0px;
+    }
+
+    #headphone-section > div > ul > li, #kids-version > div > ul > li{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    #multiple-headphones{
+        height: 250px;
+    }
+
+    #multiple-headphones > p{
+        margin-top: 100px;
+    }
+
+    #mic-section{
+        height: 250px;
+    }
+}
